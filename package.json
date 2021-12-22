@@ -1,0 +1,16 @@
+{
+  "name": "pokemonapi",
+  "version": "1.0.0",
+  "description": "pokemon api test",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "pokeapi-js-wrapper": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

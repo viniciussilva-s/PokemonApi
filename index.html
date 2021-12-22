@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang='pt-br'>
+
+<head>
+    <title>Title </title>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <!-- Shortcut -->
+    <!-- <link rel='shortcut icon' href='./assets/img/favicon.png' type='image/png'> -->
+    <!-- Bootstrap CSS -->
+    <style>
+        *,
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: #b2bec3;
+        }
+
+        body {
+            background-color: #636e72;
+        }
+
+        #app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: #2d3436;
+            width: 50vw;
+            height: 60vh;
+            margin: 1rem;
+            padding: 1.5rem;
+            border-radius: 18px;
+            box-shadow: 0px 0px 8px 0px white;
+        }
+
+        .card .card-header {
+            border-bottom: 1px solid;
+            padding: 0.6rem 0;
+
+        }
+
+        .card .card-header h5 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        .card .card-body {
+            flex: 1 1 auto;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .row .conteudo_50 {
+            max-width: 50%;
+            display: flex;
+            /* justify-items: center; */
+            align-items: center;
+        }
+
+        .conteudo_50 .img {
+            max-width: 230px;
+            max-height: 230px;
+            padding: 0.5rem;
+        }
+
+        .conteudo_50 .img img {
+            width: 170px;
+            /* height: auto; */
+        }
+
+        .conteudo_50 article {
+            max-width: 230px;
+            max-height: 230px;
+        }
+
+        .card .card-footer {
+            border-top: 1px solid;
+            padding: 0.6rem 0;
+
+        }
+
+        .paginacao ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paginacao ul li:first-child,
+        .paginacao ul li:last-child {
+            margin: 0 0.4rem;
+        }
+
+        .paginacao ul button {
+            padding: 0.1rem 0.3rem;
+            margin: 0 0.2rem;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        .paginacao ul button:hover {
+            color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="card">
+            <div class="card-header">
+                <h5>${nome}</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="conteudo_50">
+                        <div class="img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/36.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo_50">
+                        <article>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="paginacao">
+                    <ul>
+                        <li><button>&larr; </button></li>
+                        <li><button>2</button></li>
+                        <li><button>3</button></li>
+                        <li><button>4</button></li>
+                        <li><button>&rarr; </button></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script> -->
+    <!-- script js  -->
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+
+    <script src='./index.js'></script>
+</body>
+
+</html>
